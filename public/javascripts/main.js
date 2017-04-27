@@ -200,7 +200,7 @@ function sendReq() {
       //"<h1><center> Intent : <span style=\"color:red\">" + JSON.parse(response) + "</span></center></h1>";
       //+ "<h1><center> Confidence : <span style=\"color:red\">" + JSON.parse(response).entities.confidence + "</span></center></h1>" +
       //"<h1><center> Value : <span style=\"color:red\">" + JSON.parse(response).entities.on_off + "</span></center></h1>";
-        $('#response').html(content + JSON.parse(response));
+        $('#response').html(content +  response);
         console.log(response);
     });
 }
