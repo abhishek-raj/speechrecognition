@@ -182,7 +182,7 @@ var form = new FormData();
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost:3000/",
+    "url": "https://swengsr.herokuapp.com/",
     "method": "POST",
     "headers": {
         "cache-control": "no-cache"
