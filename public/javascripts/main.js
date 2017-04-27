@@ -196,11 +196,11 @@ var settings = {
 function sendReq() {
     $.ajax(settings).done(function(response) {
       $('#response').html("");
-      var content = "<h1><center> Text : <span style=\"color:red\">" + JSON.parse(response)._text + "</span></center></h1>" + "<br>" +
-      "<h1><center> Intent : <span style=\"color:red\">" + JSON.parse(response) + "</span></center></h1>";
+      var content = "<h1><center> Text : <span style=\"color:red\">" + JSON.parse(response)._text + "</span></center></h1>" + "<br>";
+      //"<h1><center> Intent : <span style=\"color:red\">" + JSON.parse(response) + "</span></center></h1>";
       //+ "<h1><center> Confidence : <span style=\"color:red\">" + JSON.parse(response).entities.confidence + "</span></center></h1>" +
       //"<h1><center> Value : <span style=\"color:red\">" + JSON.parse(response).entities.on_off + "</span></center></h1>";
-        $('#response').html(content);
+        $('#response').html(content + JSON.parse(response));
         console.log(response);
     });
 }
